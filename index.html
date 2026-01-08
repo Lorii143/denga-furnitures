@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Denga Furnitures | Kisumu</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .hero-bg {
+      background-image:
+        linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,58,138,0.9)),
+        url('https://images.unsplash.com/photo-1581092334651-ddf26d9f5f4d');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur shadow">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-900">DENGA FURNITURES</h1>
+    <a href="#login" class="bg-blue-900 text-white px-5 py-2 rounded hover:bg-blue-800 transition">
+      Staff Portal
+    </a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero-bg pt-36 pb-28 px-6 text-center relative">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+      Crafted Furniture &<br>
+      Trusted Scrap Metal Services
+    </h2>
+
+    <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
+      Serving Kisumu with durable furniture solutions and transparent scrap metal trading.
+      Built on quality, trust, and efficiency.
+    </p>
+
+    <div class="flex justify-center gap-4">
+      <a href="#services" class="bg-white text-blue-900 px-8 py-3 rounded font-semibold hover:bg-slate-100">
+        Our Services
+      </a>
+      <a href="#login" class="border border-white text-white px-8 py-3 rounded hover:bg-white hover:text-blue-900 transition">
+        Staff Login
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-20 px-6 bg-white">
+  <div class="max-w-7xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-blue-900 mb-12">Our Services</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="p-8 border rounded-lg shadow-sm">
+        <h4 class="text-2xl font-semibold mb-3">Furniture Solutions</h4>
+        <p class="text-slate-600">
+          Custom home, office, and commercial furniture designed for durability,
+          functionality, and modern living.
+        </p>
+      </div>
+
+      <div class="p-8 border rounded-lg shadow-sm">
+        <h4 class="text-2xl font-semibold mb-3">Scrap Metal Trading</h4>
+        <p class="text-slate-600">
+          Buying and recycling iron, steel, aluminium, copper, and other metals
+          with fair pricing and transparency.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGIN ================= -->
+<section id="login" class="py-20 px-6 bg-slate-100">
+  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow">
+    <h3 class="text-3xl font-bold text-center text-blue-900 mb-6">Staff Login</h3>
+
+    <form>
+      <input type="text" placeholder="Username"
+        class="w-full mb-4 px-4 py-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"/>
+
+      <input type="password" placeholder="Password"
+        class="w-full mb-6 px-4 py-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"/>
+
+      <button class="w-full bg-blue-900 text-white py-3 rounded hover:bg-blue-800 transition">
+        Login
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= DASHBOARD (STRUCTURE) ================= -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h3 class="text-4xl font-bold text-blue-900 mb-10">Sales Dashboard</h3>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="p-6 bg-blue-50 rounded shadow">
+        <p class="text-slate-500">Today’s Sales</p>
+        <h4 class="text-3xl font-bold">KES 0</h4>
+      </div>
+      <div class="p-6 bg-blue-50 rounded shadow">
+        <p class="text-slate-500">Monthly Revenue</p>
+        <h4 class="text-3xl font-bold">KES 0</h4>
+      </div>
+      <div class="p-6 bg-blue-50 rounded shadow">
+        <p class="text-slate-500">Transactions</p>
+        <h4 class="text-3xl font-bold">0</h4>
+      </div>
+    </div>
+
+    <div class="p-8 border rounded-lg shadow">
+      <h4 class="text-2xl font-semibold mb-6">Enter Sales</h4>
+
+      <div class="grid md:grid-cols-4 gap-4">
+        <input type="text" placeholder="Item / Category" class="border p-3 rounded"/>
+        <input type="number" placeholder="Quantity" class="border p-3 rounded"/>
+        <input type="number" placeholder="Amount (KES)" class="border p-3 rounded"/>
+        <button class="bg-blue-900 text-white rounded hover:bg-blue-800">
+          Add Sale
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-slate-900 text-white py-10 text-center">
+  <p class="text-lg font-semibold">DENGA FURNITURES</p>
+  <p class="text-slate-400 mt-2">Furniture & Scrap Metal Services | Kisumu, Kenya</p>
+</footer>
+
+</body>
+</html>
